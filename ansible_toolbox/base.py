@@ -49,6 +49,7 @@ class BaseApp (object):
         g.add_argument('--user', '-u')
         g.add_argument('--ask-become-pass', '-K',
                        action='store_true')
+        g.add_argument('--private-key', '--key-file')
 
         p.set_defaults(gather=True)
         return p
@@ -75,6 +76,9 @@ class BaseApp (object):
 
         if args.user:
             cmd.extend(('-u', args.user))
+
+        if args.user:
+            cmd.extend(('--private-key', args.private_key))
 
         if args.connection:
             cmd.extend(('-c', args.connection))

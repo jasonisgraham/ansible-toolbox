@@ -65,6 +65,7 @@ The following additional options are simply proxies to the equivalent
 - `--sudo`, `-s`
 - `--become`, `-b`
 - `--user`, `-u` *user*
+- `--private-key`, `--key-file` *private-key*
 - `--inventory`, `-i` *inventory*
 - `--extra-vars`, `-e` *vars*
 - `--tags`, `-t` *tags*
